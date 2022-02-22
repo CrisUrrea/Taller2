@@ -1,0 +1,52 @@
+using System;
+
+namespace Punto14
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double vd1, vd2, vd3, salar, totven, porven, salar1, salar2, salar3;
+
+            Console.WriteLine("Ingrese las ventas del departamento 1: ");
+            vd1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Ingrese las ventas del departamento 2: ");
+            vd2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Ingrese las ventas del departamento 3: ");
+            vd3 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Ingrese el valor del salario de los vendedores por departamento: ");
+            salar = Convert.ToDouble(Console.ReadLine());
+
+            totven = vd1 + vd2 + vd3;
+            porven = 0.33 * totven;
+            if (vd1 > porven) 
+            {
+                salar1 = salar + 0.2 * salar;
+            }
+            else
+            {
+                salar1 = salar;
+            }
+            if (vd2 > porven)
+            {
+                salar2 = salar + 0.2 * salar;
+            }
+            else
+            {
+                salar2 = salar;
+            }
+            if (vd3 > porven)
+            {
+                salar3 = salar + 0.2 * salar;
+            }
+            else
+            {
+                salar3 = salar;
+            }
+            Console.WriteLine("Salario vendedores dept 1: " + salar1 + " Salario vendedores dept 2: " + salar2 + " Salario vendedores dept 3: " + salar3);
+        }
+     }
+}
