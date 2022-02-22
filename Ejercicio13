@@ -1,0 +1,51 @@
+using System;
+
+namespace Ejercicio13
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double valcomp, valpag, pdes;
+            string color;
+
+            Console.WriteLine("Ingrese valor de compra: ");
+            valcomp = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Ingrese el color de la bolita: ");
+            color = Console.ReadLine();
+
+            if (color == "Blanco")
+            {
+                pdes = 0;
+            }
+            else 
+            {
+                if (color == "Verde") 
+                {
+                    pdes = 10;
+                }
+                else
+                {
+                    if (color == "Amarillo") 
+                    {
+                        pdes = 25;
+                    }
+                    else
+                    {
+                        if (color == "Azul")
+                        {
+                            pdes = 50;
+                        }
+                        else
+                        {
+                            pdes = 100;
+                        }
+                    }
+                }
+            }
+            valpag = valcomp - pdes * valcomp / 100;
+            Console.WriteLine("El Cliente debe pagar: " + valpag);
+        }
+    }
+}
