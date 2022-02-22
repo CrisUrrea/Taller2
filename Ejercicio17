@@ -1,0 +1,12 @@
+int n, num=1;
+double suma=0;
+
+Console.WriteLine("Ingrese el numero a tener en cuenta para la suma: ");
+n = Convert.ToInt32(Console.ReadLine());
+
+while (num <= n)
+{
+    suma = suma + num;
+    num = num + 1;
+}
+Console.WriteLine("La suma es: " + suma);
