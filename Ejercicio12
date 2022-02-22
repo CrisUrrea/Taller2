@@ -1,0 +1,41 @@
+using System;
+
+namespace Ejercicio12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nom;
+            double nht, vhn, het, hee8, salario;
+
+            Console.WriteLine("Ingrese Nombre del trabajador: ");
+            nom = Console.ReadLine();
+
+            Console.WriteLine("Ingrese el numero de horas trabajadas: ");
+            nht = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Ingrese el valor de hora: ");
+            vhn = Convert.ToDouble(Console.ReadLine());
+
+            if (nht > 40)
+            {
+                het = nht - 40;
+                if (het > 8)
+                {
+                    hee8 = het - 8;
+                    salario = 40 * vhn + 16 * vhn + hee8 * 3 * vhn;
+                }
+                else
+                {
+                    salario = 40 * vhn + het * 2 * vhn;
+                }
+            }
+            else
+            {
+                salario = nht * vhn;
+            }
+            Console.WriteLine("El trabajador " + nom + " Devengo: $" + salario);
+        }
+    }
+}
