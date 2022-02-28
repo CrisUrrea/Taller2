@@ -1,0 +1,59 @@
+using System;
+
+namespace ejercicio8;
+class program
+{
+    static void Main (string[] args)
+    {
+        int a = 10;
+        int b = 2;
+        int c = 8;
+        int d = 7;
+        int e = 1;
+
+        if (a == 10)
+        {
+            Console.WriteLine("You entered (0)", a);
+            
+            if (b == 2)
+            {
+                Console.WriteLine("You entered (0)", b);
+
+             }
+            else
+            {
+                Console.WriteLine("error");
+               
+                if (c == 8)
+                {
+                    Console.WriteLine("Y0u entered (0)", c);
+
+                }
+                else
+                {
+                    Console.WriteLine("error");
+                }
+
+            }
+           
+        }else
+        {
+            Console.WriteLine("error");
+            
+            if (d == 7)
+            {
+                Console.WriteLine("You entered (0)", d);
+               
+                if (e == 1)
+                {
+                    Console.WriteLine("You entered (0)", e);
+
+                }else
+                {
+                    Console.WriteLine("Error");
+                        
+                }
+            }
+        }   
+    }
+}
