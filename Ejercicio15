@@ -1,0 +1,79 @@
+using System;
+
+namespace Ejercicio15
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double pesoA, pesoB, pesoC, pesoD;
+
+            Console.WriteLine("Ingrese el peso de la esfera A: ");
+            pesoA = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Ingrese el peso de la esfera B:");
+            pesoB = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Ingrese el peso de la esfera C:");
+            pesoC = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Ingrese el peso de la esfera D: ");
+            pesoD = Convert.ToDouble(Console.ReadLine());
+
+            if((pesoA == pesoB) && (pesoA == pesoD))
+            {
+                if (pesoD>pesoA)
+                {
+                    Console.WriteLine("La esfera D es la diferente");
+                }
+                else
+                {
+                    Console.WriteLine("La esfera D es la diferente");
+                }
+            }
+            else
+            {
+                if((pesoA==pesoB)&& (pesoA==pesoD))
+                {
+                    Console.WriteLine("La esfera C es la diferente");
+                    if ((pesoC>pesoA))
+                    {
+                        Console.WriteLine("Y es de mayor peso");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Y es de menor peso");
+                    }
+                }
+                else
+                {
+                    if((pesoA==pesoC)&&(pesoA==pesoD))
+                    {
+                        Console.WriteLine("La esfera B es la diferente");
+                        if(pesoB>pesoD)
+                        {
+                            Console.WriteLine("Y es de mayor peso");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Y es de menor peso");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("La esfera A es la diferente");
+                        if(pesoA>pesoB)
+                        {
+                            Console.WriteLine("Y es de mayor peso");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Y es de menor peso");
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
