@@ -1,0 +1,31 @@
+using System;
+
+namespace Ejercicio10
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Ingresar Numero: ");
+            int num=int.Parse(Console.ReadLine());
+            
+            int 1-1;
+            bool encontrado;
+            encontrado = false;
+            
+            while((1 <= num) && (encontrado = false))
+            {
+              int num=int.Parse(Console.ReadLine());
+              
+              if(int==0)
+              {
+                encontrado=true;
+              }
+              else
+              {
+                1++;
+              }
+            }
+        }
+    }
+}
