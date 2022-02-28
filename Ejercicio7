@@ -1,0 +1,32 @@
+using System;
+
+namespace ejercicio7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Ingrese a: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese b: ");
+            int b = int.Parse(Console.ReadLine());
+            
+
+            if (a > b)
+            {
+                Console.WriteLine("A es mayor que b" + a);
+            }
+            else
+            {
+                if (a == b)
+                {
+                    Console.WriteLine("A es igual b" + b);
+                }
+                else
+                {
+                    Console.WriteLine("A es menor que b" + b);
+                }
+            }
+        }
+    }
+}
